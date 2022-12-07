@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 20rem;
+  height: 20rem;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper h1 {
+  font-size: 2rem;
+}
+.svg-container {
+  display: none;
+}
+svg {
+  height: 2rem;
+  width: 2rem;
+}
+.svg-container.show {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+}
+.result {
+  display: inline-block;
+}
