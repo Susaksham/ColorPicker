@@ -10,13 +10,56 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Color Picker</h1>
-      <p>It can tell hexadecimal of any point on the page</p>
-      <p>To get started Click down below👇</p>
-      <button id="btn">Click me</button>
+      <h1>
+        <span
+          style="
+            color: #fc09c3;
+            border-bottom: 0.5rem solid;
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "
+        >
+          C
+        </span>
+        <span style="color: #e0d022; border-bottom: 0.5rem solid;  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">o</span>
+        <span style="color: #e0224e; border-bottom: 0.5rem solid;  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">l</span>
+        <span style="color: #0c0c0c; border-bottom: 0.5rem solid;  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">o</span>
+        <span style="color: #55e022; border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">r</span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span style="color: #22e0e0; border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">P</span>
+        <span style="color: #9122e0; border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">i</span>
+        <span style="color: #e0c022; border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">c</span>
+        <span style="color: #cc19cf; border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">k</span>
+        <span style="color: #e02222; border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">e</span>
+        <span style="color: rgb(51, 51, 51); border-bottom: 0.5rem solid; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+          "">r</span>
+      </h1>
+      <input type="text" class="input" />
+      <button id="btn">Get Color</button>
       <div id="result-container">
-        <div id="result"></div>
-        <div class="svg-container">
+        <p id="result"></p>
+        <p class="svg-container">
           <svg
             class="svg"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,15 +69,8 @@
               d="M21.04 12.13C21.18 12.13 21.31 12.19 21.42 12.3L22.7 13.58C22.92 13.79 22.92 14.14 22.7 14.35L21.7 15.35L19.65 13.3L20.65 12.3C20.76 12.19 20.9 12.13 21.04 12.13M19.07 13.88L21.12 15.93L15.06 22H13V19.94L19.07 13.88M11 19L9 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H9.18C9.6 1.84 10.7 1 12 1C13.3 1 14.4 1.84 14.82 3H19C20.1 3 21 3.9 21 5V9L19 11V5H17V7H7V5H5V19H11M12 3C11.45 3 11 3.45 11 4C11 4.55 11.45 5 12 5C12.55 5 13 4.55 13 4C13 3.45 12.55 3 12 3Z"
             />
           </svg>
-        </div>
+        </p>
       </div>
     </div>
   </body>
 </html>
-<!-- "content_scripts": [
-     {
-       "matches": ["<all_urls>"],
-      "js": ["script.js"],
-    "css": ["styles.css"]
-    }
-  ],-->

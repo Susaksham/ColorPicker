@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lobster&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +7,34 @@
 }
 body {
   width: 20rem;
-  height: 20rem;
+  height: 25rem;
+  background-color: rgba(255, 249, 249, 0.2);
 }
 .wrapper {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
+
+  color: #ffff;
+  padding-left: 0.9rem;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 .wrapper h1 {
+  font-size: 0;
+  font-family: 'Lobster', cursive;
+
+  font-weight: 600;
+}
+.wrapper span {
   font-size: 2rem;
+  padding-right: 0.2rem;
+}
+.wrapper p {
+  font-size: 1.3rem;
 }
 .svg-container {
   display: none;
@@ -26,9 +45,62 @@ svg {
 }
 .svg-container.show {
   display: block;
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
 }
-.result {
-  display: inline-block;
+.svg-container {
+  background-color: #ffff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+.input {
+  opacity: 0;
+  /* width: 1px;
+  height: 1px; */
+  position: absolute;
+}
+.svg-container.add::before {
+  content: 'copied';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 3rem;
+  height: 1.6rem;
+  border-radius: 3px;
+  color: #202124cb;
+  font-size: 1rem;
+  background-color: #ffff;
+}
+
+#result {
+  width: 8rem;
+  text-align: center;
+  height: 2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#result-container {
+  display: flex;
+  align-items: flex-start;
+}
+#btn {
+  padding: 5rem 2.8rem;
+  border-radius: 100%;
+  color: #0630ae;
+  /* border: 2px #2c5ceb solid; */
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  border: 0.3rem #cacaca solid;
+  background: #eff0f4;
+  border: 1rem solid #f1f2f6ca;
+
+  box-shadow: inset -10px -10px 10px rgba(0, 0, 0, 0.1),
+    inset 2px 5px 10px rgba(255, 255, 255, 1),
+    10px 10px 15px rgba(0, 0, 0, 0.05), 10px 10px 15px rgba(0, 0, 0, 0.025);
+}
+#btn.add1 {
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(255, 255, 255, 1),
+    10px 10px 15px rgba(0, 0, 0, 0.05), 10px 10px 15px rgba(0, 0, 0, 0.025);
 }
